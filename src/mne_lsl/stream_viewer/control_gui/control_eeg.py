@@ -34,7 +34,7 @@ class ControlGUI_EEG(_ControlGUI):
         self._set_configuration(config_file)
 
         self._backend.start_timer()
-
+    
     def _load_gui(self):
         """Load the UI created with QtCreator."""
         logger.debug("Loading GUI..")
@@ -86,7 +86,7 @@ class ControlGUI_EEG(_ControlGUI):
         self.show()  # Display
 
         logger.debug("Loading GUI complete.")
-
+    
     def _load_configuration(self, file):
         """Load default configuration for the ranges."""
         logger.debug("Loading configuration..")
